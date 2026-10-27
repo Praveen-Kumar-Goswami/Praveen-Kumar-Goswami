@@ -327,4 +327,5 @@ tech_ethos: "Bridging the gap between cutting-edge Deep Learning research and re
 <div align="center">
   <sub>Designed &amp; engineered with precision, high-performance SVGs, neural architecture pipelines, and modern web aesthetics.<br/>
   © 2026 <b>Praveen Kumar Goswami</b>. All rights reserved.</sub>
+  <!-- GitHub Telemetry: Active | Systems: Operational -->
 </div>
