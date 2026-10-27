@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="neuralBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a13" />
+      <stop offset="50%" stop-color="#0d111a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <linearGradient id="synapseLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#a371f7" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#3fb950" stop-opacity="0.5" />
+    </linearGradient>
+
+    <linearGradient id="nodeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#58a6ff" />
+      <stop offset="100%" stop-color="#1f6feb" />
+    </linearGradient>
+    <linearGradient id="nodeGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="nodeGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <filter id="neuralGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <style>
+      .mono-label {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Fira Code', monospace;
+      }
+      .node-pulse-1 {
+        animation: pulseNode1 3s ease-in-out infinite alternate;
+      }
+      .node-pulse-2 {
+        animation: pulseNode2 3.5s ease-in-out infinite alternate;
+      }
+      .node-pulse-3 {
+        animation: pulseNode3 2.8s ease-in-out infinite alternate;
+      }
+      @keyframes pulseNode1 {
+        0% { transform: scale(0.95); opacity: 0.8; }
+        100% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 6px #58a6ff); }
+      }
+      @keyframes pulseNode2 {
+        0% { transform: scale(0.95); opacity: 0.8; }
+        100% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 6px #c084fc); }
+      }
+      @keyframes pulseNode3 {
+        0% { transform: scale(0.95); opacity: 0.8; }
+        100% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 6px #34d399); }
+      }
+      .synapse-dash {
+        stroke-dasharray: 8 6;
+        animation: dashFlow 4s linear infinite;
+      }
+      @keyframes dashFlow {
+        from { stroke-dashoffset: 28; }
+        to { stroke-dashoffset: 0; }
+      }
+    </style>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="1000" height="240" rx="16" fill="url(#neuralBg)" stroke="#30363d" stroke-width="1.2" />
+
+  <!-- Corner Decors -->
+  <path d="M 20 40 L 20 20 L 40 20" fill="none" stroke="#58a6ff" stroke-width="2" />
+  <path d="M 980 40 L 980 20 L 960 20" fill="none" stroke="#a371f7" stroke-width="2" />
+  <path d="M 20 200 L 20 220 L 40 220" fill="none" stroke="#3fb950" stroke-width="2" />
+  <path d="M 980 200 L 980 220 L 960 220" fill="none" stroke="#58a6ff" stroke-width="2" />
+
+  <!-- Header Banner -->
+  <g transform="translate(36, 32)">
+    <circle cx="6" cy="6" r="4.5" fill="#a371f7" filter="url(#neuralGlow)" />
+    <text x="20" y="10" fill="#c084fc" font-size="13" font-weight="700" letter-spacing="1.5" class="mono-label">
+      DEEP LEARNING &amp; NEURAL ARCHITECTURE PIPELINE
+    </text>
+    <text x="440" y="10" fill="#8b949e" font-size="12" class="mono-label">
+      // Real-Time Computer Vision • Tensor Acceleration • Edge Inference
+    </text>
+  </g>
+
+  <!-- SYNAPSES / WEIGHT CONNECTIONS -->
+  <g stroke="url(#synapseLine)" stroke-width="1.5" class="synapse-dash" opacity="0.65">
+    <!-- Input L1 to L2 -->
+    <line x1="140" y1="80" x2="380" y2="70" />
+    <line x1="140" y1="80" x2="380" y2="120" />
+    <line x1="140" y1="80" x2="380" y2="170" />
+
+    <line x1="140" y1="130" x2="380" y2="70" />
+    <line x1="140" y1="130" x2="380" y2="120" />
+    <line x1="140" y1="130" x2="380" y2="170" />
+
+    <line x1="140" y1="180" x2="380" y2="70" />
+    <line x1="140" y1="180" x2="380" y2="120" />
+    <line x1="140" y1="180" x2="380" y2="170" />
+
+    <!-- L2 to L3 (Attention / Latent) -->
+    <line x1="380" y1="70" x2="620" y2="80" />
+    <line x1="380" y1="70" x2="620" y2="140" />
+
+    <line x1="380" y1="120" x2="620" y2="80" />
+    <line x1="380" y1="120" x2="620" y2="140" />
+
+    <line x1="380" y1="170" x2="620" y2="80" />
+    <line x1="380" y1="170" x2="620" y2="140" />
+
+    <!-- L3 to Output Heads -->
+    <line x1="620" y1="80" x2="860" y2="75" />
+    <line x1="620" y1="80" x2="860" y2="125" />
+    <line x1="620" y1="80" x2="860" y2="175" />
+
+    <line x1="620" y1="140" x2="860" y2="75" />
+    <line x1="620" y1="140" x2="860" y2="125" />
+    <line x1="620" y1="140" x2="860" y2="175" />
+  </g>
+
+  <!-- LAYER 1: INPUT SENSORS / TENSORS -->
+  <g transform="translate(140, 0)">
+    <g transform="translate(0, 80)"><circle r="12" fill="url(#nodeGrad1)" class="node-pulse-1" /><circle r="4" fill="#ffffff" /></g>
+    <g transform="translate(0, 130)"><circle r="12" fill="url(#nodeGrad1)" class="node-pulse-1" /><circle r="4" fill="#ffffff" /></g>
+    <g transform="translate(0, 180)"><circle r="12" fill="url(#nodeGrad1)" class="node-pulse-1" /><circle r="4" fill="#ffffff" /></g>
+    <text x="-65" y="134" fill="#58a6ff" font-size="12" font-weight="700" class="mono-label">INPUT TENSORS</text>
+    <text x="-65" y="150" fill="#8b949e" font-size="10" class="mono-label">Webcam/RGB/Signal</text>
+  </g>
+
+  <!-- LAYER 2: CONV / FEATURE EXTRACTION -->
+  <g transform="translate(380, 0)">
+    <g transform="translate(0, 70)"><circle r="14" fill="url(#nodeGrad2)" class="node-pulse-2" /><circle r="5" fill="#ffffff" /></g>
+    <g transform="translate(0, 120)"><circle r="14" fill="url(#nodeGrad2)" class="node-pulse-2" /><circle r="5" fill="#ffffff" /></g>
+    <g transform="translate(0, 170)"><circle r="14" fill="url(#nodeGrad2)" class="node-pulse-2" /><circle r="5" fill="#ffffff" /></g>
+    <text x="0" y="206" fill="#c084fc" font-size="11" font-weight="700" text-anchor="middle" class="mono-label">CONV &amp; BACKBONE</text>
+    <text x="0" y="220" fill="#8b949e" font-size="9" text-anchor="middle" class="mono-label">Feature Pyramids</text>
+  </g>
+
+  <!-- LAYER 3: ATTENTION & EMBEDDINGS -->
+  <g transform="translate(620, 0)">
+    <g transform="translate(0, 80)"><circle r="15" fill="url(#nodeGrad2)" class="node-pulse-2" /><circle r="5.5" fill="#ffffff" /></g>
+    <g transform="translate(0, 140)"><circle r="15" fill="url(#nodeGrad2)" class="node-pulse-2" /><circle r="5.5" fill="#ffffff" /></g>
+    <text x="0" y="206" fill="#a371f7" font-size="11" font-weight="700" text-anchor="middle" class="mono-label">LATENT EMBEDDINGS</text>
+    <text x="0" y="220" fill="#8b949e" font-size="9" text-anchor="middle" class="mono-label">Spatial Mesh &amp; Attention</text>
+  </g>
+
+  <!-- LAYER 4: TASK OUTPUT HEADS -->
+  <g transform="translate(860, 0)">
+    <g transform="translate(0, 75)"><circle r="12" fill="url(#nodeGrad3)" class="node-pulse-3" /><circle r="4" fill="#ffffff" /></g>
+    <g transform="translate(0, 125)"><circle r="12" fill="url(#nodeGrad3)" class="node-pulse-3" /><circle r="4" fill="#ffffff" /></g>
+    <g transform="translate(0, 175)"><circle r="12" fill="url(#nodeGrad3)" class="node-pulse-3" /><circle r="4" fill="#ffffff" /></g>
+    <text x="22" y="79" fill="#3fb950" font-size="11" font-weight="600" class="mono-label">468 Face Mesh Points</text>
+    <text x="22" y="129" fill="#3fb950" font-size="11" font-weight="600" class="mono-label">Gaze Vector &lt;100ms</text>
+    <text x="22" y="179" fill="#3fb950" font-size="11" font-weight="600" class="mono-label">Real-time Assistive Action</text>
+  </g>
+</svg>
