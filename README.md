@@ -239,7 +239,7 @@ tech_ethos: "Bridging the gap between cutting-edge Deep Learning research and re
       <a href="https://github.com/Praveen-Kumar-Goswami/IEEE"><b>Source Code »</b></a>
     </td>
     <td width="50%" valign="top">
-      <h3>⚔️ <a href="https://mr-samurai.vercel.app">MR-Samurai &amp; Stubiee Ecosystem</a></h3>
+      <h3>⚔️ <a href="https://praveen-kumar-goswami.github.io/MR-samurai/">MR-Samurai &amp; Stubiee Ecosystem</a></h3>
       <p>
         High-octane responsive web platforms showcasing modern UI/UX design, state handling, and interactive components.
       </p>
@@ -250,7 +250,7 @@ tech_ethos: "Bridging the gap between cutting-edge Deep Learning research and re
       <p>
         <code>TypeScript</code> <code>TailwindCSS</code> <code>Vercel Edge</code>
       </p>
-      <a href="https://mr-samurai.vercel.app"><b>MR-Samurai Live 🔗</b></a> •
+      <a href="https://praveen-kumar-goswami.github.io/MR-samurai/"><b>MR-Samurai Live 🔗</b></a> •
       <a href="https://stubiee.vercel.app"><b>Stubiee Live 🔗</b></a>
     </td>
   </tr>
