@@ -250,7 +250,8 @@ tech_ethos: "Bridging the gap between cutting-edge Deep Learning research and re
       <p>
         <code>TypeScript</code> <code>TailwindCSS</code> <code>Vercel Edge</code>
       </p>
-      <a href="https://mr-samurai.vercel.app"><b>MR-Samurai Live 🔗</b></a> •
+      <a href="https://praveen-kumar-goswami.github.io/MR-samurai/"><b>GitHub Pages Live 🔗</b></a> •
+      <a href="https://mr-samurai.vercel.app"><b>Vercel Mirror 🔗</b></a> •
       <a href="https://stubiee.vercel.app"><b>Stubiee Live 🔗</b></a>
     </td>
   </tr>
